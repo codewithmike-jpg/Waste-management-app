@@ -82,7 +82,7 @@ const NotificationItem = ({ item }) => {
   );
 };
 
-const NotificationScreen = () => {
+const Notification = () => {
   const groupedNotifications = notifications.reduce((acc, item) => {
     acc[item.section] = [...(acc[item.section] || []), item];
     return acc;
@@ -177,4 +177,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default NotificationScreen;
+export default Notification;
